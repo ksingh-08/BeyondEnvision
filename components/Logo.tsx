@@ -6,17 +6,17 @@ import { FaLocationArrow } from 'react-icons/fa';
 const Logo = () => {
   return (
     <div className='w-full'>
-    <div className="absolute top-0 left-0 right-0 bottom-0 p-0 m-0 pl-2 w-full h-auto">
+    <div className="absolute top-0 left-0 right-0 bottom-0 p-0 m-0 pl-1 w-full h-auto">
     
-      <img src="/BeyondEnvision.png" alt="Logo" className="w-60 h-auto object-cover" />
+      <img src="/BeyondEnvision.png" alt="Logo" className="md:w-60 w-52 h-auto object-cover" />
     </div>
    
-    <div className="absolute top-12 right-44 h-10 w-10 mt-2">
+    <div className="absolute top-10 md:top-12  right-36 md:right-44 h-10 w-10 mt-2">
       <a href="#contact">
-                  <button className="shadow-[inset_0_0_0_2px_#616467] text-black px-7 py-4
-                   rounded-full tracking-normal uppercase font-bold bg-transparent hover:bg-[#221543] hover:text-white dark:text-neutral-200 transition duration-200 min-w-[150px] whitespace-nowrap">
+                  <button className="shadow-[inset_0_0_0_2px_#616467] text-black px-4 py-4
+                   rounded-full tracking-normal uppercase font-bold bg-transparent hover:bg-[#221543] hover:text-white dark:text-neutral-200 transition duration-200 w-40 whitespace-nowrap">
   Contact Us
-</button>
+</button> 
               </a>
     </div>
 
