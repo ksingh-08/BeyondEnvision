@@ -115,7 +115,7 @@ export const BentoGridItem = ({
           {title}
         </div>
        {id === 1 && (
-  <a href="https://www.youtube.com/watch?v=E64TKUqgi_4" target="_blank" rel="noopener noreferrer" className="font-normal pt-4">
+  <a href="https://www.youtube.com/watch?v=E64TKUqgi_4" target="_blank" rel="noopener noreferrer" className="font-normal md:pt-3 pt-0">
     <div>Step Inside, Click Here!</div>
   </a>
   
@@ -129,7 +129,7 @@ export const BentoGridItem = ({
             <div className="font-sans font-bold text-3xl text-center pt-0 mt-0 mb-2">
             <a href="https://www.behance.net/gallery/203812557/Vivacity24-Fest-Branding">Behance Project Link</a>
             </div>
-            <p className='font-sans font-light text-lg text-center'>Showcasing our year-long journey of dynamic motion graphics  <br />and engaging reels for Vivacity.</p>
+            <p className='font-sans text-sm font-light md:font-light md:text-lg text-center'>Showcasing our year-long journey of dynamic motion graphics  <br />and engaging reels for Vivacity.</p>
           </div>
           <ReactPlayer
             className="rounded-sm"

@@ -87,7 +87,7 @@ export const projects = [
     des: "An energetic edit featuring sharp visuals and captivating motion graphics to elevate Tharun Speaks, presenting his message with precision and power.",
     img: "/tharun.jpg",
     iconLists: ["premiere.png", "/after64.png"],
-    link: "",
+    link: "https://drive.google.com/file/d/1yOnmZXidicJ6KtGOQ7AL9D8wc4tUG27P/view?usp=drive_link",
   },
   {
     id: 3,
@@ -95,7 +95,7 @@ export const projects = [
     des: "A polished edit with engaging visuals and smooth motion graphics, highlighting DevOps Insiders and delivering insights with precision and energy.",
     img: "/devops.jpg",
     iconLists: ["premiere.png", "/after64.png"],
-    link: "https://github.com/adrianhajdin/ai_saas_app",
+    link: "https://drive.google.com/file/d/1g-tmvylTpQWIP9rNEaJMf8dW06o8iR5B/view?usp=drive_link",
   },
   {
     id: 4,

@@ -6,9 +6,9 @@ import { FaLocationArrow } from 'react-icons/fa';
 const Logo = () => {
   return (
     <div className='w-full'>
-    <div className="absolute top-0 left-0 right-0 bottom-0 p-0 m-0 pl-1 w-full h-auto">
+    <div className="absolute top-14 left-12 right-0 bottom-0 p-0 m-0 pl-1 w-full h-auto">
     
-      <img src="/BeyondEnvision.png" alt="Logo" className="md:w-60 w-52 h-auto object-cover" />
+      <img src="/beyonde.png" alt="Logo" className="md:w-48 w-40 h-auto object-cover" />
     </div>
    
     <div className="absolute top-10 md:top-12  right-36 md:right-44 h-10 w-10 mt-2">
