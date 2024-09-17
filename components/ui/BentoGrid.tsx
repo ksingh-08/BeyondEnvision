@@ -52,7 +52,8 @@ export const BentoGridItem = ({
   spareImg?:string;
 }) => {
   const [isClient, setIsClient] = useState(false);
-
+  const [loading, setLoading] = useState(true);
+  const [buffering, setBuffering] = useState(false);
   useEffect(() => {
     setIsClient(true);
   }, []);
@@ -131,15 +132,26 @@ export const BentoGridItem = ({
             </div>
             <p className='font-sans text-sm font-light md:font-light md:text-lg text-center'>Showcasing our year-long journey of dynamic motion graphics  <br />and engaging reels for Vivacity.</p>
           </div>
+          {(loading || buffering) && (
+        <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 z-10">
+          {/* Spinner */}
+          <div className="w-16 h-16 border-4 border-blue-500 border-solid border-t-transparent rounded-full animate-spin"></div>
+        </div>
+      )}
           <ReactPlayer
             className="rounded-sm"
             style={{ borderRadius: '12px' }}
             url="/draft1.mp4" // Path to your video file
+            preload='auto'
             width="100%"     // Adjust width as needed
             height="auto"    // Adjust height as needed
             playing          // Automatically starts playing the video
             loop             // Makes the video loop continuously
-            controls={false} // Hides the controls
+            controls={false}
+             // Hides the controls
+             onReady={() => setLoading(false)} // Hide loader when video is ready
+        onBuffer={() => setBuffering(true)} // Show loader on buffering
+        onBufferEnd={() => setBuffering(false)} // Hide loader when buffering ends
           />
         </div>
         
