@@ -11,10 +11,10 @@ const Logo = () => {
       <img src="/beyonde.png" alt="Logo" className="md:w-48 w-40 h-auto object-cover" />
     </div>
    
-    <div className="absolute top-12 md:top-12  right-28 md:right-44 h-10 w-10 mt-2">
+    <div className="absolute top-12 md:top-12  right-28 md:right-44 h-10 w-10 mt-2 text-center justify-center">
       <a href="#contact">
-                  <button className="shadow-[inset_0_0_0_2px_#616467] text-black pt-4 pb-3
-                   rounded-full tracking-normal uppercase font-bold bg-transparent hover:bg-[#221543] hover:text-white dark:text-neutral-200 transition duration-200 w-32 text-xs md:w-40 md:text-base whitespace-nowrap">
+                  <button className="shadow-[inset_0_0_0_2px_#616467] text-black pt-4 pb-4
+                   rounded-full tracking-normal uppercase font-bold bg-transparent hover:bg-[#221543] hover:text-white dark:text-neutral-200 transition duration-200 w-32 text-xs md:w-40 md:text-base whitespace-nowrap text-center justify-center">
   Contact Us
 </button> 
               </a>
