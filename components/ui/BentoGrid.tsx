@@ -56,7 +56,11 @@ export const BentoGridItem = ({
   const [isClient, setIsClient] = useState(false);
   const [loading, setLoading] = useState(true);
   const [buffering, setBuffering] = useState(false);
+ 
 
+  const handleCanPlay = () => {
+    setLoading(false); // Video is ready to play
+  };
   useEffect(() => {
     setIsClient(true);
   }, []);
@@ -124,6 +128,7 @@ export const BentoGridItem = ({
   </a>
   
 )}
+
 <div className="video-container">
  {isClient && id === 5 && (
   <div>
@@ -135,7 +140,12 @@ export const BentoGridItem = ({
             </div>
             <p className='font-sans text-sm font-light md:font-light md:text-lg text-center'>Showcasing our year-long journey of dynamic motion graphics  <br />and engaging reels for Vivacity.</p>
           </div>
-        
+        {loading && (
+        <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 z-10">
+          {/* Loader */}
+          <div className="w-16 h-16 border-4 border-blue-500 border-solid border-t-transparent rounded-full animate-spin"></div>
+        </div>
+      )}
            <video
     className="w-full h-auto rounded-lg"
     src="/draft1.mp4"
@@ -143,6 +153,8 @@ export const BentoGridItem = ({
     loop
     muted
     playsInline
+     onCanPlay={handleCanPlay} // Trigger when the video can play
+        onLoadedData={() => setLoading(false)} // Trigger when the data is loaded
   >
   </video>
         </div>
