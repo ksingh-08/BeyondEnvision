@@ -4,11 +4,13 @@ import { cn } from "@/utils/cn";
 import { BackgroundGradientAnimation } from "./GradientBg";
 import  {GlobeDemo}  from "./GridGlobe";
 import Lottie from "react-lottie";
-import { useEffect, useState } from "react";
+import { useEffect, useState,useRef } from "react";
 import { IoCopyOutline } from "react-icons/io5";
 import animationData from '@/data/confetti.json';
 import MagicButton from "./MagicButton";
 import Link from "next/link";
+import 'video.js/dist/video-js.css';
+import videojs from 'video.js';
 
 export const BentoGrid = ({
   className,
@@ -54,11 +56,12 @@ export const BentoGridItem = ({
   const [isClient, setIsClient] = useState(false);
   const [loading, setLoading] = useState(true);
   const [buffering, setBuffering] = useState(false);
+
   useEffect(() => {
     setIsClient(true);
   }, []);
     const [copied,setCopied]=useState(false);
-
+   
     const handleCopy = () => {
         navigator.clipboard.writeText('services.beyondenvision@gmail.com');
 
@@ -132,27 +135,16 @@ export const BentoGridItem = ({
             </div>
             <p className='font-sans text-sm font-light md:font-light md:text-lg text-center'>Showcasing our year-long journey of dynamic motion graphics  <br />and engaging reels for Vivacity.</p>
           </div>
-          {(loading || buffering) && (
-        <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 z-10">
-          {/* Spinner */}
-          <div className="w-16 h-16 border-4 border-blue-500 border-solid border-t-transparent rounded-full animate-spin"></div>
-        </div>
-      )}
-          <ReactPlayer
-            className="rounded-sm"
-            style={{ borderRadius: '12px' }}
-            url="/draft1.mp4" // Path to your video file
-            preload='auto'
-            width="100%"     // Adjust width as needed
-            height="auto"    // Adjust height as needed
-            playing          // Automatically starts playing the video
-            loop             // Makes the video loop continuously
-            controls={false}
-             // Hides the controls
-             onReady={() => setLoading(false)} // Hide loader when video is ready
-        onBuffer={() => setBuffering(true)} // Show loader on buffering
-        onBufferEnd={() => setBuffering(false)} // Hide loader when buffering ends
-          />
+        
+           <video
+    className="w-full h-auto rounded-lg"
+    src="/draft1.mp4"
+    autoPlay
+    loop
+    muted
+    playsInline
+  >
+  </video>
         </div>
         
         </div>
