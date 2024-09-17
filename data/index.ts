@@ -110,21 +110,21 @@ export const projects = [
 export const testimonials = [
   {
     quote:
-      "As the event head of TEDx LNMIIT, I had the pleasure of witnessing Karan's exceptional talent as a content creator. His ability to conceptualize and produce engaging narratives played a pivotal role in shaping our event's success. His dedication to storytelling and his creative vision enriched our content, captivating our audience and leaving a lasting impression. Karan consistently demonstrated professionalism and innovation, making him a valuable asset to our team.",
+      "As the event head of TEDx LNMIIT, I had the pleasure of witnessing Beyond Envision's exceptional talent as a content creator. Their ability to conceptualize and produce engaging narratives played a pivotal role in shaping our event's success. Their dedication to storytelling and creative vision enriched our content, captivating our audience and leaving a lasting impression. Beyond Envision consistently demonstrated professionalism and innovation, making them a valuable asset to our team.",
     name: "Keshav Agarwal",
     title: "Event Head - TEDxLNMIIT",
     img: "/keshavsir.jpg",
   },
   {
     quote:
-      "As the content lead at DevOps Insiders, I had the privilege of collaborating with Karan, who consistently demonstrated outstanding creativity and expertise as a content creator. His ability to craft compelling narratives and deliver engaging content was instrumental in enhancing our online presence and engaging our audience effectively. Karan's dedication to quality and his innovative approach to content creation significantly contributed to our success in delivering valuable insights to our community.",
+      "As the content lead at DevOps Insiders, I had the privilege of collaborating with Beyond Envision, who consistently demonstrated outstanding creativity and expertise as a content creator. Their ability to craft compelling narratives and deliver engaging content was instrumental in enhancing our online presence and engaging our audience effectively. Beyond Envision's dedication to quality and innovative approach to content creation significantly contributed to our success in delivering valuable insights to our community.",
     name: "Aditya Singh",
     title: "Ex-Content Lead at Devops Insiders",
     img: "/singhsir.jpg",
   },
   {
     quote:
-      "As a member of Vivacity, Karan showcased remarkable talent as a content creator. His ability to craft engaging narratives and produce compelling content was instrumental in bringing our cultural fest to life. His creative approach and dedication to excellence were invaluable to our team, leaving a lasting impact on our audience.",
+      "As a member of Vivacity, Beyond Envision showcased remarkable talent as a content creator. Their ability to craft engaging narratives and produce compelling content was instrumental in bringing our cultural fest to life. Their creative approach and dedication to excellence were invaluable to our team, leaving a lasting impact on our audience.",
     name: "Vuuren Mohanty",
     title: "Ex-Creative Head of Vivacity LNMIIT, Jaipur",
     img: "/montysir.jpg",
@@ -212,17 +212,17 @@ export const workExperience = [
 export const socialMedia = [
   {
     id: 1,
-    img: "/git.svg",
-    url: "https://github.com/ksingh-08",
+    img: "/igw.svg",
+    url: "https://www.instagram.com/edits.beyondenvision?igsh=MTRraGhpMWZ4cXpudw==",
   },
   {
     id: 2,
     img: "/twit.svg",
-    url: "https://x.com/k_singh_08",
+    url: "https://x.com/beyondenv",
   },
-  {
-    id: 3,
-    img: "/link.svg",
-    url: "https://www.linkedin.com/in/karan-singh-774ba1227/",
-  },
+  // {
+  //   id: 3,
+  //   img: "/link.svg",
+  //   url: "https://www.linkedin.com/in/karan-singh-774ba1227/",
+  // },
 ];
