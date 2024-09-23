@@ -218,7 +218,7 @@ export const socialMedia = [
   {
     id: 2,
     img: "/twit.svg",
-    url: "https://x.com/beyondenv",
+    url: "https://x.com/beyond_env",
   },
   // {
   //   id: 3,
