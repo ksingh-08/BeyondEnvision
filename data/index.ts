@@ -220,9 +220,9 @@ export const socialMedia = [
     img: "/twit.svg",
     url: "https://x.com/beyond_env",
   },
-  // {
-  //   id: 3,
-  //   img: "/link.svg",
-  //   url: "https://www.linkedin.com/in/karan-singh-774ba1227/",
-  // },
+  {
+    id: 3,
+    img: "/link.svg",
+    url: "https://www.linkedin.com/company/beyond-envision/",
+  },
 ];
